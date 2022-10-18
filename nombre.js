@@ -2,8 +2,8 @@ function nombre(name){
   return `hola, ${name}`;
 }
 
-function saludaratuvieja(){
-  return 'hola vieja';
+function saludaramablemente(){
+  return 'hola, que tal?';
 }
 
 //module.exports.nombre = nombre;
@@ -13,6 +13,6 @@ function saludaratuvieja(){
 //can be exports in this way too
   module.exports = {
     nombre: nombre,
-    saludaratuvieja: saludaratuvieja
+    saludaramablemente: saludaramablemente
 };
 //console.log(module.exports);
