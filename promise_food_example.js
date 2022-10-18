@@ -13,7 +13,7 @@ const order = new Promise ((resolve, reject) => {
         }        
     }, 2500);
 });
-
+/*
 const result_order_success = (order_success) => {
     console.log(order_success);
 }
@@ -21,4 +21,14 @@ const result_order_nosuccess = (order_nosuccess) => {
     console.log(order_nosuccess);
 }
 
-order.then(result_order_success,result_order_nosuccess);
+order.then(result_order_success,result_order_nosuccess); 
+*/
+
+/* another sintaxis to write the same*/
+order
+    .then((order_success) =>{
+        console.log(order_success);
+    })
+    .then(null,(order_nosuccess) => {
+        console.log(order_nosuccess)
+    });
